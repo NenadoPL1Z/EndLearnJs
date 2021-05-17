@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- defer - говорит, что мы будет обрабатывать скрипт в фоновом режиме, а затем запустить скрипт когда он загрузится, если много файликов defer, то они будут загрузаться по очереди -->
+    <!-- <script defer src="script.js"></script> -->
+    <!-- async - !ПОДКЛЮЧАЕМ ЕСЛИ ФАЙЛ НЕ ЗАВИСТ ОТ DOM И ОТ ДРУГИХ СКРИПТОВ,  асинхронние скрипты не будут ждать другдруга, кто перваый загрузился, тот и покажеться первым-->
+    <p>Hello world!</p>
+    <p>Second message!</p>
+    <script async src="script.js"></script>
+  </body>
+</html>

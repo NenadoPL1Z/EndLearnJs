@@ -1,0 +1,12 @@
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexbox__box {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+}

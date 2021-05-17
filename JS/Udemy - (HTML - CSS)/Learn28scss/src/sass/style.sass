@@ -1,0 +1,27 @@
+//? Переменная
+$text_color: red
+
+//? Миксины
+@mixin box
+    display: block
+    width: 250px
+    height: 250px
+    background-color: yellow
+//? Вложенность
+h1
+    color: $text_color
+h2
+    color: blue
+.block
+    background-color: green
+    h3
+        color: purple
+    &_color
+        background-color: pink
+        button
+            //? Используем миксину box
+            @include box
+    &_color
+        background-color: lightblue
+h5
+    font-size: 90px
